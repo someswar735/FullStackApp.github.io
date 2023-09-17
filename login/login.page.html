@@ -1,0 +1,112 @@
+<!--<ion-header>
+  <ion-toolbar>
+    <ion-title  color="warning">Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<ion-content>
+  <ion-card>
+    <ion-card-content>
+      <ion-item fill="solid"> 
+        <ion-label position="floating">Email</ion-label>
+        <ion-input type="email" ngModel email></ion-input>
+        <ion-note slot="error">Invalid email</ion-note>
+
+      </ion-item>
+
+      <br>
+      <ion-item fill="solid"> 
+        <ion-label position="floating">Password</ion-label>
+        <ion-input type="password" ngModel password></ion-input>
+        <ion-note slot="error">Invalid Password</ion-note>
+
+      </ion-item>
+      <br>
+      <a [routerLink]="['/forgot-password']" class="small-text">Forgot Password</a>
+      <br>
+      <br>
+      <ion-button expand="block" color="tertiary" (click)="logIn()" (click)="showLoading()">Login</ion-button>
+      <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+      <span class="already">If You don't have an account,Register First!</span>
+      <ion-button [routerLink]="['/registration']" expand="block" color="danger" (click)="register()">Register</ion-button>
+    </ion-card-content>
+   </ion-card>
+</ion-content>
+-->
+
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <div class="back-circle"></div>
+    <ion-title class="ion-text-center custom-font">Log In</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="true">
+  <svg class="back-blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <path fill="#8295A3" d="M68.6,-33.5C81.6,-17.2,79.6,13.8,65.7,37.6C51.8,61.3,25.9,77.8,2.1,76.6C-21.7,75.4,-43.5,56.5,-54.2,34.6C-65,12.7,-64.8,-12.3,-53.9,-27.4C-43,-42.4,-21.5,-47.6,3.2,-49.4C27.9,-51.2,55.7,-49.7,68.6,-33.5Z" transform="translate(100 100)" />
+  </svg>
+
+  <div class="ion-padding">
+    <form class="ion-padding">
+      <form [formGroup]="myForm">
+        <div class="wrap-input">
+          <input class="input" type="email" name="user-email" placeholder="Email" formControlName="email">
+          <div *ngIf="myForm?.get('email')?.hasError('required') && myForm.get('email')?.touched">
+            Email is required.
+          </div>
+
+          <div *ngIf="myForm.get('email')?.hasError('email') && myForm.get('email')?.touched">
+            Please enter a valid email address.
+          </div>
+        </div>
+      </form>
+
+      <div class="wrap-input">
+        <input class="input" type="password" name="password" placeholder="Password">
+      </div>
+
+      <a [routerLink]="['/forgot-password']" class="small-text">
+        <font color="#00008b">
+          Forgot Password
+        </font>
+      </a>
+
+      <div class="container-form-btn">
+        <button class="form-btn custom-font" (click)="logIn()" (click)="submit()" (click)="showLoading()" (click)="presentToast('top')">
+          Login
+        </button>
+      </div>
+    </form>
+  </div>
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <p class="ion-text-center custom-font">Don't have an account? <a href="/registration">Sign Up</a></p>
+  </ion-toolbar>
+</ion-footer>-->

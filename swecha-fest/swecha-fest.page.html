@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button color="primary" default-href="#"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Back</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-header>
+      <ion-img width="50" height="50" (click)="openImageInNewTab1('assets/swecha-fest1.png')" src="assets/swecha-fest1.png"></ion-img>
+      <br>
+      <ion-img width="50" height="50" (click)="openImageInNewTab2('assets/swecha2.png')" src="assets/swecha2.png"></ion-img>
+      <br>
+      <ion-img (click)="openImageInNewTab3('assets/swecha3.png')" src="assets/swecha3.png"></ion-img>
+
+      <ion-card-subtitle>Swecha Freedom Fest</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      Swecha aims at providing global software solutions to the local people with the Free Software development model by working together with the community of developers and users all over. The prime objective of Swecha OS is to provide a complete computing solution to a population that speaks and understands only Telugu.
+      <br>
+      <br>
+      The project aims at bridging the gap between the computer technology that exists predominantly in English and the Telugu-speaking community of India. The project also aims at providing a framework for development and maintenance of Free Software projects taken up by the community.
+      <br>
+      <br>
+      Swecha is a project aimed at coming out with a localized version of GNU/Linux in Telugu. The target users of the distro being the entire community that is prey to the digital divide. This project helps in coming out with a solution for the digital divide and allows the possibility of digital unity becoming a reality.
+      <br>
+      <br>
+      <a href="http://swechaap.org/events/ffestsrkr">Register Here</a>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

@@ -1,0 +1,43 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title title="Notification">
+      {{ title }} Updates
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card class="card">
+    <ion-card-header>
+      <ion-img width="50" height="50" src="assets/Swechalogo1.png" (click)="RedirectToOtherPage()" (click)="showLoading()"></ion-img>
+    </ion-card-header>
+  
+    
+  </ion-card> 
+
+  <ion-card class="card">
+    <ion-card-header>
+      <ion-img width="50" height="50" src="assets/sigma.png" (click)="RedirectToAnotherPage()" (click)="showPresenting()"></ion-img>
+    </ion-card-header>
+  </ion-card>
+
+
+  <ion-card class="card">
+    <ion-card-header>
+      <ion-img width="50" height="50" src="assets/half_days.png" (click)="RedirectToHalfDaysPage()" (click)="showHalfPresenting()"></ion-img>
+    </ion-card-header>
+  </ion-card>
+
+  <ion-card class="card">
+    <ion-card-header>
+      <ion-img width="50" height="50" src="assets/appreciation.png" (click)="RedirectToAppreciationsPage()" (click)="showHalfPresenting()"></ion-img>
+    </ion-card-header>
+  </ion-card>
+
+  <ion-card class="card">
+    <ion-card-header>
+      <ion-img width="50" height="50" src="assets/registration_form.png" (click)="RedirectToRegistrationFormPage()" (click)="showHalfPresenting()"></ion-img>
+    </ion-card-header>
+  </ion-card>
+
+</ion-content>

@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button color="primary" default-href="#"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Back</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title color="warning">half days notification</ion-card-title>
+<br>
+      <ion-img (click)="openImageInNewTab('assets/appreciation1.png')" src="assets/appreciation1.png">1st year's Timetable</ion-img>
+      <br>
+      <ion-img (click)="openImageInNewTab1('assets/appreciation2.png')" src="assets/appreciation2.png">2nd year's Timetable</ion-img>
+<br>
+<ion-img (click)="openImageInNewTab2('assets/appreciation3.png')" src="assets/appreciation3.png">2nd year's Timetable</ion-img>
+
+    </ion-card-header>
+  </ion-card>
+</ion-content>

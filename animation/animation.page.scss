@@ -1,0 +1,22 @@
+ion-card {
+    --background: #fbcb04;
+    --color: #11100a;
+  }
+  
+  ion-card-title {
+    --color: #060a0a;
+  }
+  
+  ion-card-subtitle {
+    --color: #0a0e0d;
+  }
+  ion-content {
+
+    --background: #fbcb04;
+  }  
+  
+  /* iOS places the subtitle above the title */
+  ion-card-header.ios {
+    display: flex;
+    flex-flow: column-reverse;
+  }

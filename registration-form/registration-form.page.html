@@ -1,0 +1,121 @@
+<!--<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Registration form</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <form>
+    <ion-item lines="full">
+      <ion-label position="floating">First name</ion-label>
+      <ion-input type="text" name="first" [(ngModel)]="user.firstname" ></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">Last name</ion-label>
+      <ion-input type="text"  name="last" [(ngModel)]="user.lastname" ></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="text"  name="email" [(ngModel)]="user.email" ></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">Reg no</ion-label>
+      <ion-input type="text"  name="Reg" [(ngModel)]="user.Reg" ></ion-input>
+    </ion-item>
+    <ion-row>
+      <ion-col>
+        <ion-button (click)="submit()" color="danger" expand="block">submit</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>-->
+
+
+
+<!--<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Register</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <form>
+    <ion-item lines="full">
+      <ion-label position="floating">First name</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">Last name</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">Password</ion-label>
+      <ion-input type="password" required></ion-input>
+    </ion-item>
+    <ion-row>
+      <ion-col>
+        <ion-button type="submit" color="danger" expand="block" (click)="register()">Sign Up</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>-->
+
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+<ion-header class="ion-no-border">
+	<ion-toolbar>
+    <div class="back-circle"></div>
+		<ion-title class="ion-text-center custom-font">Registration</ion-title>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="true">
+
+  <svg class="back-blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <path fill="#8295A3" d="M68.6,-33.5C81.6,-17.2,79.6,13.8,65.7,37.6C51.8,61.3,25.9,77.8,2.1,76.6C-21.7,75.4,-43.5,56.5,-54.2,34.6C-65,12.7,-64.8,-12.3,-53.9,-27.4C-43,-42.4,-21.5,-47.6,3.2,-49.4C27.9,-51.2,55.7,-49.7,68.6,-33.5Z" transform="translate(100 100)" />
+</svg>
+
+<div class="ion-padding">
+
+  <form class="ion-padding">
+
+    <div class="wrap-input">
+      <input class="input" type="text" name="user-name" [(ngModel)]="user.firstname" placeholder="First Name">
+    </div>
+
+      <div class="wrap-input">
+        <input class="input" type="text" name="user-name" [(ngModel)]="user.lastname" placeholder="Last Name">
+      </div>
+
+      <div class="wrap-input">
+        <input class="input" type="dob" name="user-dob" [(ngModel)]="user.dob" placeholder="dd/mm/year">
+      </div>
+
+    <div class="wrap-input">
+     <input class="input" type="email" name="user-email" [(ngModel)]="user.email" placeholder="Email">
+    </div>
+
+    <div class="wrap-input">
+     <input class="input" type="password" name="password" [(ngModel)]="user.password" placeholder="Password">
+    </div>
+
+    <div class="container-form-btn">
+      <button class="form-btn custom-font" type="submit" (click)="submit()" (click)="register()" (click)="presentToast('top')">
+      Register
+      </button>
+    </div>   
+
+
+  </form>
+
+</div>
+
+</ion-content>

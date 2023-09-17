@@ -1,0 +1,72 @@
+<ion-content>
+  <div class="content">
+    <ion-buttons slot="start" class="menu-btn">
+      <ion-menu-button color="light"></ion-menu-button>
+    </ion-buttons>
+    <div class="top">
+      <div class="nameText">
+        <p>Hi <span>Someswar</span></p>
+        <h6>Class: 2/4 CSD | Regd No: 22B95A6206</h6>
+        <small>2022-2023</small>
+      </div>
+      <div class="imageThumbnail">
+        <img src="assets/dev2.png" />
+      </div>
+    </div>
+
+    <div class="middleBox">
+      <div class="card">
+        <div class="card-content">
+          <p>80.39%</p>
+          <h6>Attendance</h6>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <p>$50,000</p>
+          <h6>Fees Due</h6>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <p>90%</p>
+          <h6>Marks</h6>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <p>Programming, Design, Communication</p>
+          <h6>Skills</h6>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <p>Reading, Playing Guitar, Travelling</p>
+          <h6>Hobbies</h6>
+        </div>
+      </div>
+      <!-- Additional cards -->
+      <div class="card">
+        <div class="card-content">
+          <p>Teacher: M Suresh Babu</p>
+          <h6>Class Teacher</h6>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <p>Java, DBMS, APP Dev</p>
+          <h6>Subjects</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottomDiv">
+      <div class="gridDiv">
+        <div class="box" *ngFor="let item of menu" (click)="goToPage(item.menu_id)">
+          <img src="assets/csd_logo.png" />
+          <p>{{item.title}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

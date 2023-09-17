@@ -1,0 +1,178 @@
+<!--<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+     Category
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+  <ion-content class="ion-padding">
+    <ion-button id="open-modal" expand="block">Lectures</ion-button>
+  
+    <ion-modal #modal trigger="open-modal">
+      <ng-template>
+        <ion-content>
+          <ion-toolbar>
+            <ion-title>Lectures</ion-title>
+            <ion-buttons slot="end">
+              <ion-button color="light" (click)="modal.dismiss()">Close</ion-button>
+            </ion-buttons>
+          </ion-toolbar>
+          <ion-list>
+            <ion-item>
+              <ion-avatar slot="start">
+                <ion-img src="https://i.pravatar.cc/300?u=b"></ion-img>
+              </ion-avatar>
+              <ion-label>
+                <h2>Dr Suresh Mudunuri</h2>
+                <p>In-charge, Department of CSD </p>
+              </ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-avatar slot="start">
+                <ion-img src="https://i.pravatar.cc/300?u=a"></ion-img>
+              </ion-avatar>
+              <ion-label>
+                <h2>Dr N G K Murthy</h2>
+                <p>Head, Technology Center</p>
+              </ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-avatar slot="start">
+                <ion-img src="https://i.pravatar.cc/300?u=e"></ion-img>
+              </ion-avatar>
+              <ion-label>
+                <h2>M Suseela Garu</h2>
+                <p>CS Language Expert</p>
+              </ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-avatar slot="start">
+                <ion-img src="https://i.pravatar.cc/300?u=d"></ion-img>
+              </ion-avatar>
+              <ion-label>
+                <h2>Vamshi Sir</h2>
+                <p>Technical Staff</p>
+              </ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-avatar slot="start">
+                <ion-img src="https://i.pravatar.cc/300?u=e"></ion-img>
+              </ion-avatar>
+              <ion-label>
+                <h2>Ashwini Garu</h2>
+                <p>CS Lecturer</p>
+              </ion-label>
+            </ion-item>
+          </ion-list>
+        </ion-content>
+      </ng-template>
+    </ion-modal>
+
+  </ion-content>
+
+  <ion-modal>
+ 
+    <ion-button expand="block" color="tertiary" (click)="student()">Students</ion-button>
+
+  </ion-modal>-->
+
+  <ion-header>
+    <ion-toolbar>
+      <ion-segment value="Faculty">
+
+        <ion-segment-button value="Faculty" id="open-modal">
+          <ion-label>Faculty</ion-label>
+        </ion-segment-button>
+      </ion-segment>
+    </ion-toolbar>
+    
+  </ion-header>
+
+  <ion-content>
+    <section>
+      <div class="box">
+          <h3>Faculty List</h3>
+          <div class="list">
+              <div class="imgBx">
+                  <img src="assets/suresh.jpg">
+              </div>
+              <div class="content">
+                  <h2 class="rank"><small>#</small>1</h2>
+                  <h4>M Suresh Babu</h4>
+                  <p>Head Of The Department</p>
+              </div>
+          </div>
+          <div class="list">
+              <div class="imgBx">
+                  <img src="assets/male.jpg">
+              </div>
+              <div class="content">
+                  <h2 class="rank"><small>#</small>2</h2>
+                  <h4>N.G.K Murthy</h4>
+                  <p>In-charge of Tech Center</p>
+              </div>
+          </div>
+          <div class="list">
+              <div class="imgBx">
+                  <img src="assets/female.png">
+              </div>
+              <div class="content">
+                  <h2 class="rank"><small>#</small>3</h2>
+                  <h4>Suseela</h4>
+                  <p>CS Specialist</p>
+              </div>
+          </div>
+          <div class="list">
+              <div class="imgBx">
+                  <img src="assets/female.png">
+              </div>
+              <div class="content">
+                  <h2 class="rank"><small>#</small>4</h2>
+                  <h4>Ashwini</h4>
+                  <p>Assistant Lecturer</p>
+              </div>
+          </div>
+          <div class="list">
+              <div class="imgBx">
+                  <img src="assets/male.jpg">
+              </div>
+              <div class="content">
+                  <h2 class="rank"><small>#</small>5</h2>
+                  <h4>Vamshi</h4>
+                  <p>Technical Staff</p>
+              </div>
+          </div>
+          <div class="list">
+              <div class="imgBx">
+                  <img src="assets/male.jpg">
+              </div>
+              <div class="content">
+                  <h2 class="rank"><small>#</small>6</h2>
+                  <h4>Goutham</h4>
+                  <p>Technical Staff</p>
+              </div>
+          </div>
+          <div class="list">
+              <div class="imgBx">
+                  <img src="assets/male.jpg">
+              </div>
+              <div class="content">
+                  <h2 class="rank"><small>#</small>7</h2>
+                  <h4>Yesu</h4>
+                  <p>Technical Staff</p>
+              </div>
+          </div>
+          <div class="list">
+              <div class="imgBx">
+                  <img src="assets/female.png">
+              </div>
+              <div class="content">
+                  <h2 class="rank"><small>#</small>8</h2>
+                  <h4>Raju</h4>
+                  <p>i don't know</p>
+              </div>
+          </div>
+      </div>
+  </section>
+  </ion-content>

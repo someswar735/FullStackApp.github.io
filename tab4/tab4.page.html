@@ -1,0 +1,72 @@
+<!--<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Account Details
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>
+        displayName
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label>Email</ion-label>
+        <ion-note slot="end">email</ion-note>
+      </ion-item>
+      <ion-item>
+        <ion-label>Phone</ion-label>
+        <ion-note slot="end">phoneNumber</ion-note>
+      </ion-item>
+      <ion-item>
+        <ion-label>UID</ion-label>
+        <ion-note slot="end">UID</ion-note>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-button expand="block">Logout</ion-button>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-img width="50" height="50" src="assets/dev.png" (click)="RedirectToOtherPage()" (click)="showLoading()"></ion-img>
+      <ion-card-subtitle>Developer Details</ion-card-subtitle>
+    </ion-card-header>
+    
+  </ion-card>
+</ion-content>
+-->
+
+<!-- account.page.html -->
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Account Details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-content>
+      <ion-item>
+        <ion-label>Email</ion-label>
+        <ion-input [value]="userDetails?.email" readonly></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Password</ion-label>
+        <ion-input [value]="userDetails?.password" readonly></ion-input>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-img width="50" height="50" src="assets/dev.png" (click)="RedirectToOtherPage()" (click)="showLoading()"></ion-img>
+      <ion-card-subtitle>Developer Details</ion-card-subtitle>
+    </ion-card-header>
+    
+  </ion-card>
+</ion-content>
